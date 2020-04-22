@@ -13,3 +13,5 @@ In this Interface Electronics Modules, we will learn
 - Power electronics
 
 Meanwhile, we will introduce basic skills like print circuit board design(Altium Designer 2020), software simulation(Multisim and Proteus),  Micro-controller basics.
+
+Later in this semester, we will take the lab session to deep our understanding of theoretical part of electronics and by making projects you will enhance the practical ability.
