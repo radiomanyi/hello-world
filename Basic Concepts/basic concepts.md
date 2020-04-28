@@ -60,11 +60,17 @@ Power supplied equals the total power absorbed.
 5. Evaluate the solution and check for accuracy.
 6. Has the problem been solved satisfactorily?
 
+Solve for the current flowing through the 8Ω resistor in Fig. 1.19.
 
+<img src="C:\Users\Administrator\Documents\GitHub\hello-world\Basic Concepts\Example 1.10.png" style="zoom:50%;" />
 
+Using nodal analysis.
 
-
-
+<img src="C:\Users\Administrator\Documents\GitHub\hello-world\Basic Concepts\solution ex1.10.png" style="zoom:50%;" />
+$$
+answer： i8Ω=0.25A 
+$$
+It is flowing down through the 8-Ω resistor.
 
 
 
