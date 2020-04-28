@@ -47,9 +47,18 @@ Source 电源 Ideal independent source| Dependent(Controlled) source
 
 Example:
 
-<img src="D:\multisim projects\example 1.7.png" style="zoom:50%;" />
+<img src="C:\Users\Administrator\Documents\GitHub\hello-world\Basic Concepts\example 1.7.png" style="zoom:60%;" />
 
 Power supplied equals the total power absorbed.
+
+### Problem solving
+
+1. Carefully define the problem.
+2. Present everything you know about the problem.
+3. Establish a set of alternative solutions and determine the one that promises the greatest likehood of success.
+4. Attempt a problem solution.
+5. Evaluate the solution and check for accuracy.
+6. Has the problem been solved satisfactorily?
 
 
 
