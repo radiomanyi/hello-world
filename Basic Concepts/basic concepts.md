@@ -72,6 +72,8 @@ answer： i8Ω=0.25A
 $$
 It is flowing down through the 8-Ω resistor.
 
+Today I will give you another assignment to do.
+
 
 
 
