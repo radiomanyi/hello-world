@@ -23,33 +23,35 @@ class circuit{
 	}
 
     public void display(){
-    	System.out.println("Resistors are as follows:\n");
+    	System.out.print("Resistors are as follows: ");
     	for(int i=0;i<3;i++)
-    	{System.out.print(resistance[i]+"ohm ");
-		 }
+    	{System.out.print(this.resistance[i]+"ohm ");} 
 		 System.out.println("\n");
+		 System.out.println("Battery is: "+this.battery+"volts\n");
 	}
 
 }
 public class Calc{
 	public static void main(String args[])
 	{
-    //double[] circuitRes = new double[3];
     circuit mycircuit = new circuit();
-    System.out.println("Input your resisor values: ");
+    System.out.println("Input your resisor values: unit ohm");
     Scanner res = new Scanner(System.in);
      for(int i=0; i<3; i++) {
          mycircuit.resistance[i] = res.nextDouble();
      }
-     
+
+     System.out.println("Input your battery value is: unit Volts");
+     Scanner bat = new Scanner(System.in);
+     double newbattery = bat.nextDouble();
+     mycircuit.battery = newbattery;
+     System.out.println("\n");
      mycircuit.display();
     
      double zRes[] = mycircuit.generalRes(mycircuit.resistance[0],mycircuit.resistance[1],mycircuit.resistance[2]);
      
      System.out.println("General Resistor is: "+String.format("%.2f",zRes[0])+"ohm\n");
-     System.out.println("Input your battery values: unit Volts");
-     Scanner bat = new Scanner(System.in);
-     mycircuit.battery = bat.nextDouble(); 
+
 
      System.out.print("I1 = "+String.format("%.2f",mycircuit.battery/zRes[0])+"A\t");
      System.out.print("I2 = "+String.format("%.2f", (mycircuit.battery/zRes[0])*zRes[1])+"A\t");
