@@ -1,0 +1,392 @@
+{
+	"folder_history":
+	[
+	],
+	"last_version": 3211,
+	"last_window_id": 1,
+	"log_indexing": false,
+	"settings":
+	{
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"g",
+						"generalRes"
+					],
+					[
+						"ba",
+						"battery"
+					],
+					[
+						"print",
+						"println"
+					],
+					[
+						"circuit",
+						"circuitRes"
+					],
+					[
+						"vol",
+						"voltage"
+					],
+					[
+						"re",
+						"resistance"
+					],
+					[
+						"pu",
+						"public"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/D/Java/ReverseNumberWhile.java",
+					"settings":
+					{
+						"buffer_size": 1086,
+						"encoding": "UTF-8",
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"contents": "\nimport java.util.Scanner;\nclass circuit{\n\t/*\n\t *the function of ohm's law\n\t *the function of voltage divider\n\t */\n\tdouble[] resistance = new double[3];\n\tdouble battery;\n\n\tpublic double ohmL(double i,double v){\n\t\tdouble r;\n\t\tr=v/i;\n\t\treturn r;\n\t}\n\n\tpublic double[] generalRes(double r,double r1, double r2){\n\t\tdouble[] rcal = new double[3];\n\t\trcal[0] = r+(r1*r2)/(r1+r2);  // calc the general resistor\n\t\trcal[1] = r2/(r1+r2);\t\t  // calc the coeffcient of branch 1\n\t\trcal[2] = r1/(r1+r2);\t\t  // calc the coeffcient of branch 2\n\t\treturn rcal ;\n\t}\n\n    public void display(){\n    \tSystem.out.println(\"Resistors are as follows:\\n\");\n    \tfor(int i=0;i<3;i++)\n    \t{System.out.print(resistance[i]+\"ohm \");\n\t\t }\n\t\t System.out.println(\"\\n\");\n\t}\n\n}\npublic class Calc{\n\tpublic static void main(String args[])\n\t{\n    circuit mycircuit = new circuit();\n    System.out.println(\"Input your resisor values: \");\n    Scanner res = new Scanner(System.in);\n     for(int i=0; i<3; i++) {\n         mycircuit.resistance[i] = res.nextDouble();\n     }\n     \n     mycircuit.display();\n    \n     double zRes[] = mycircuit.generalRes(mycircuit.resistance[0],mycircuit.resistance[1],mycircuit.resistance[2]);\n     \n     System.out.println(\"General Resistor is: \"+String.format(\"%.2f\",zRes[0])+\"ohm\\n\");\n     System.out.println(\"Input your battery values: unit Volts\");\n     Scanner bat = new Scanner(System.in);\n     mycircuit.battery = bat.nextDouble(); \n\n     System.out.print(\"I1 = \"+String.format(\"%.2f\",mycircuit.battery/zRes[0])+\"A\\t\");\n     System.out.print(\"I2 = \"+String.format(\"%.2f\", (mycircuit.battery/zRes[0])*zRes[1])+\"A\\t\");\n     System.out.print(\"I3 = \"+String.format(\"%.2f\", (mycircuit.battery/zRes[0])*zRes[2])+\"A\\t\");\n\n\t}\n}",
+					"file": "/D/Java/Calc.java",
+					"file_size": 1816,
+					"file_write_time": 132328088707376952,
+					"settings":
+					{
+						"buffer_size": 1715,
+						"encoding": "UTF-8",
+						"line_ending": "Windows"
+					}
+				}
+			],
+			"build_system": "Packages/User/NEWJavaC.sublime-build",
+			"build_system_choices":
+			[
+				[
+					[
+						[
+							"Packages/Java/Ant.sublime-build",
+							""
+						],
+						[
+							"Packages/Java/JavaC.sublime-build",
+							""
+						]
+					],
+					[
+						"Packages/Java/JavaC.sublime-build",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/Java/JavaC.sublime-build",
+							""
+						],
+						[
+							"Packages/Java/JavaC.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/Java/JavaC.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/JavaC.sublime-build",
+							""
+						],
+						[
+							"Packages/User/JavaC.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/JavaC.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/NEWJavaC.sublime-build",
+							""
+						],
+						[
+							"Packages/User/NEWJavaC.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/NEWJavaC.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/javaC.sublime-build",
+							""
+						],
+						[
+							"Packages/User/javaC.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/javaC.sublime-build",
+						"Run"
+					]
+				]
+			],
+			"build_varint": "Run",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/D/Java/voltage_divder.java",
+				"/I/Program Files/MATLAB/R2016a/bin/lcdata.xml",
+				"/D/Java/ReverseNumberWhile.java",
+				"/D/Sublime Text Build 3211 x64/Data/Packages/User/JavaC.sublime-build",
+				"/I/迅雷下载/Sublime Text Build 3211 x64/HelloWorld.java",
+				"/I/迅雷下载/Sublime Text Build 3211 x64/Main.java",
+				"/I/迅雷下载/Sublime Text Build 3211 x64/Data/Packages/User/javaC.sublime-build",
+				"/C/Users/pyhom/Desktop/helloworld.java",
+				"/C/Users/pyhom/Desktop/HelloWorld.java"
+			],
+			"find":
+			{
+				"height": 34.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"<locale name=\"zh_CN\" ",
+					"<locale name=\"zh_CN\" encoding=\"GB2312\" xpg_name=\"zh_CN.GB2312\">",
+					"zh_CN.GBK",
+					"<locale name=\"zh_CN\" encoding=\"GB2312\" xpg_name=\"zh_CN.GB2312\">"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 1,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/D/Java/ReverseNumberWhile.java",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1086,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										380,
+										143
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Java/Java.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 150.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/D/Java/Calc.java",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1715,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										807,
+										807
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Java/Java.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 900.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 34.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 209.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "Packages/User/NEWJavaC.sublime-build",
+			"position": "0,2,3,-32000,-32000,-1,-1,780,287,39,1385",
+			"project": "",
+			"replace":
+			{
+				"height": 64.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 1,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}
