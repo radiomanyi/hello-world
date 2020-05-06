@@ -9,7 +9,7 @@ In this Interface Electronics Modules, we will learn
 
 - DC and AC Circuits
 - Diodes and Transistors
-- basic digital components
+- Basic digital components
 - Power electronics
 
 Meanwhile, we will introduce basic skills like print circuit board design(Altium Designer 2020), software simulation(Multisim and Proteus),  Micro-controller basics.
