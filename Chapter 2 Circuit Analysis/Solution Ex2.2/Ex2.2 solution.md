@@ -19,13 +19,12 @@ There are 3 meshes in the circuit as shown down below.
 We apply KVL to the 3 meshes in turn. For mesh 1,
 $$
 -24 + 10(i_{1 }- i_{2}) +12(i_{1} - i_{3}) = 0 \\or\\11i_{1} -5i_{2} - 6i_{3}= 12\\
-11 i _ { 1 } - 5 i _ { 2 } - 6 i _ { 3 } = 12
 $$
 
 
 For mesh 2,
 $$
--24i_{2} + 4(i_{2} - {3}) + 10(i_{2} - i_{1}) = 0 \\or\\-5i_{1} + 19i_{2} - 2i_{3}= 0
+24i_{2} + 4(i_{2} - i_{3}) + 10(i_{2} - i_{1}) = 0 \\or\\-5i_{1} + 19i_{2} - 2i_{3}= 0
 $$
 For mesh 3,
 $$
